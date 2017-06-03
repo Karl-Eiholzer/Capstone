@@ -63,7 +63,7 @@ server <- function(input, output, session) {
   source("functions.R")
   
   output$text <- renderText({
-    paste("Input text is:", input$text)
+    paste("Raw text is:", input$text)
   })
   
   observe({

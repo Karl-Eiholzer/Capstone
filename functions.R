@@ -16,10 +16,10 @@
 
 library(shiny)
 library("dplyr")
+library("data.table")
 
 # read data files to configure the app
-df4 <- readRDS("./data/fourgrams.rds")
-
+DT3 <- as.data.table(readRDS("./data/DT3.rds"))
 
 predict_words <- function ( clean_text ) {
   text_clean <- clean_text
@@ -32,13 +32,12 @@ predict_model <- function ( in_text ) {
   return(out_text)
 }
 
-
 find_in_grams <- function ( last_words, n ) {
-  dfsub <- subset(df4, grepl(capture_last_words(last_words, n), df4$Word))
+  dfsub <- subset(DT3, grepl(capture_last_words(last_words, n), DT3$index_col))
   if ( nrow(dfsub) == 0 ) {
     text_guess <- "Sorry - no guesses!!"
   } else {
-    text_guess <- capture_last_words(dfsub[1,1], 1)
+    text_guess <- dfsub$predicted[1]
   }
   if ( text_guess == capture_last_words(last_words, 1) ) {
     text_guess <- "Sorry - no guesses!!"
