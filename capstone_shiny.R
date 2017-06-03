@@ -51,7 +51,7 @@ ui <- fluidPage(
   fluidRow(HTML("<div style='margin-left:18px;margin-bottom:12px;margin-top:-12px;color:navy;'><strong>Email me: <a title='Thank You' 
                 href='mailto:Karl.Eiholzer@gmail.com'>Karl Eiholzer</a></big></strong>&nbsp;
                 or visit my <a title='LinkedIn' target='_blank' href='https://www.linkedin.com/in/karleiholzer/'> LinkedIn page</a>&nbsp;</div>") ),
-  fluidRow(HTML("<div style='margin-left:18px;margin-bottom:12px;color:navy;'><strong>Creation date: May 2017</strong></div>") )
+  fluidRow(HTML("<div style='margin-left:18px;margin-bottom:12px;color:navy;'><strong>Creation date: June 2017</strong></div>") )
   )
 
 #######################################################  S E R V E R   ######################################################################
