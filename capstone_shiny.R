@@ -8,8 +8,8 @@
 ##  https://github.com/mhnierhoff/CapstoneCoursera         ##
 ##                                                         ##
 ##  capstone_shiny.R                                       ##
-##  Created: 30 May 2017                                   ##
-##  Updated: 30 May 2017                                   ##
+##  Created: 30  May 2017                                  ##
+##  Updated: 13 June 2017                                  ##
 ##                                                         ##
 #############################################################
 
@@ -23,7 +23,7 @@ source("functions.R")
 
 ui <- fluidPage(
   # Application title
-  titlePanel("Coursera Data Science - Capstone Project"),
+  titlePanel("Coursera Data Science - Capstone Project - Next Word Prediction"),
   
   # User interface controls1
   sidebarLayout(

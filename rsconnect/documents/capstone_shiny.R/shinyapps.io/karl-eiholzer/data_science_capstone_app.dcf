@@ -3,8 +3,8 @@ title: Data Science Capstone App
 account: karl-eiholzer
 server: shinyapps.io
 appId: 185996
-bundleId: 851913
+bundleId: 851971
 url: https://karl-eiholzer.shinyapps.io/data_science_capstone_app/
-when: 1496510938.78247
+when: 1496516277.18629
 asMultiple: FALSE
 asStatic: FALSE
