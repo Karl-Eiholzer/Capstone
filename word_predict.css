@@ -1,0 +1,35 @@
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+<style>
+.insp-quote pre code {
+  font-size: 1em;
+}
+</style>
+<style>
+.midcenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+</style>
+<style>
+.slide-title {
+    font-size: 200%;
+    color: #b9b0b0;
+}
+</style>
+<style>
+.exclaim .reveal .state-background {
+  background: #e4d1d1;
+}
+
+.exclaim .reveal h1,
+.exclaim .reveal h2,
+.exclaim .reveal p {
+  color: black;
+}
+</style>

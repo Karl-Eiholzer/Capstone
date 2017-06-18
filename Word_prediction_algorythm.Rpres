@@ -8,7 +8,7 @@
 .footer {
     color: black; background: #77a8a8;
     position: fixed; top: 90%;
-    text-align:center; width:100%;
+    text-align:left; width:100%;
 }
 </style>
 <style>
@@ -45,11 +45,13 @@ class: small-code
 Build a Shiny app that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.
 
 - For the raw material, the challenge begins with a body of raw text typed into twitter, blogs, or new articles.
-- By analyzing trends in the raw text data, thge application must be able to make predictions abuot what word the user intends to come next. 
+- By analyzing trends in the raw text data, thge application must be able to make predictions about what word the user intends to come next. 
 
-<div class="footer" style="margin-top:-125px;font-size:90%;">
-Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
-Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
+For myself I added the goal that the App be modular and scalable, so that limitations of the initial draft can be more easily remedied with future builds. 
+
+<div class="footer" style="margin-top:-225px;font-size:90%;">
+&nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
+&nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
 Approach
 ========================================================
@@ -69,9 +71,9 @@ My first objective is to get an application running. Further refinement can be d
 
 
 
-<div class="footer" style="margin-top:-125px;font-size:90%;">
-Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
-Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
+<div class="footer" style="margin-top:-225px;font-size:90%;">
+&nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
+&nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
 The Application
 ========================================================
@@ -89,9 +91,9 @@ _NOTE: All source code can be found in <a href="https://github.com/Karl-Eiholzer
 
 
 
-<div class="footer" style="margin-top:-125px;font-size:90%;">
-Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
-Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
+<div class="footer" style="margin-top:-225px;font-size:90%;">
+&nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
+&nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
 Next Stages of Development
 ========================================================
@@ -103,8 +105,8 @@ No first attempt is perfect and more resources are required to refine the applic
 - _Handling of Punctuation_: the methods used to clean the data did not handle the apostrophe character. This is a known bug that will need to be addressed. An alternative sampling method can append ngrams with apostrophes into the data set without losing any existing prediction power.
 
 
-<div class="footer" style="margin-top:-125px;font-size:90%;">
-Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
-Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
+<div class="footer" style="margin-top:-225px;font-size:90%;">
+&nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
+&nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
 
