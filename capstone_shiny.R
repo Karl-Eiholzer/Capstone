@@ -67,8 +67,7 @@ server <- function(input, output, session) {
   })
   
   observe({
-    iniTime <- Sys.time()
-
+    req(input$text)
     textCleansed <- clean(input$text)  
     if(textCleansed != " ") 
     {
