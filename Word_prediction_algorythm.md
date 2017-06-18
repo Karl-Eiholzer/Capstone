@@ -3,20 +3,21 @@
   word-wrap: normal;
   -moz-hyphens: none;
 }
-</style>
-<style>
+/* ordered and unordered list styles */
+.reveal ul, 
+.reveal ol {
+    font-size: .8em;
+    color: black;
+    list-style-type: square;
+}
 .footer {
     color: black; background: #77a8a8;
     position: fixed; top: 90%;
     text-align:left; width:100%;
 }
-</style>
-<style>
 body {
     background-color: #d9ecd0;
 }
-</style>
-<style>
 div#before-column p.forceBreak {
     break-before: column;
 }
@@ -33,7 +34,7 @@ autosize: true
 css: word_predict.css
 transition: fade
 
-<div class="midcenter" style="margin-left:20px; margin-top:-50px;">
+<div class="midcenter" style="margin-left:820px; margin-top:-50px;">
 <img src="./Images/cover.png" style="background-color:transparent; border:0px; box-shadow:none;"></img>
 </div>
 
@@ -49,7 +50,7 @@ Build a Shiny app that takes as input a phrase (multiple words) in a text box in
 
 For myself I added the goal that the App be modular and scalable, so that limitations of the initial draft can be more easily remedied with future builds. 
 
-<div class="footer" style="margin-top:-225px;font-size:90%;">
+<div class="footer" style="margin-top:-25px;font-size:90%;">
 &nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
 &nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
@@ -61,17 +62,17 @@ class: small-code
 <i>Salman Rushdie, The Satanic Verses</i>
 
 - *Start Small* <br>
-My first objective is to get an application running. Further refinement can be done once the scope of the work end-to-end is understood
+<p><smaller>My first objective is to get an application running. Further refinement can be done once the scope of the work end-to-end is understood.</smaller></p>
 <p class="forceBreak"></p>
 - *Hunspell Package* <br>
- The Hunspell Package in R is spell checker and analyzer library that can check and analyze individual words as well as search for incorrect words within a text. The hunspell_parse() function was used to extract the ngrams from the text.  The hunspell_check() frunction was used to clean the words that would appear as predictions to ensure only real English words appear.
+<p><smaller>The Hunspell Package in R is spell checker and analyzer library that can check and analyze individual words as well as search for incorrect words within a text. The hunspell_parse() function was used to extract the ngrams from the text.  The hunspell_check() frunction was used to clean the words that would appear as predictions to ensure only real English words appear.</smaller></p>
 <p class="forceBreak"></p>
 - *Bulk Data Sampling* <br>
-  The processors and memory available to operate on large data sets was limited. The limitation was overcome by splitting the source text into over 4,000 files. Lines within the files were sampled repeatedly to create a large body of ngrams with counts equaling frequency. 
+<p><smaller>The processors and memory available to operate on large data sets was limited. The limitation was overcome by splitting the source text into over 4,000 files. Lines within the files were sampled repeatedly to create a large body of ngrams with counts equaling frequency. </smaller></p>
 
 
 
-<div class="footer" style="margin-top:-225px;font-size:90%;">
+<div class="footer" style="margin-top:-25px;font-size:90%;">
 &nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
 &nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
@@ -91,7 +92,7 @@ _NOTE: All source code can be found in <a href="https://github.com/Karl-Eiholzer
 
 
 
-<div class="footer" style="margin-top:-225px;font-size:90%;">
+<div class="footer" style="margin-top:-25px;font-size:90%;">
 &nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
 &nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
@@ -105,7 +106,7 @@ No first attempt is perfect and more resources are required to refine the applic
 - _Handling of Punctuation_: the methods used to clean the data did not handle the apostrophe character. This is a known bug that will need to be addressed. An alternative sampling method can append ngrams with apostrophes into the data set without losing any existing prediction power.
 
 
-<div class="footer" style="margin-top:-225px;font-size:90%;">
+<div class="footer" style="margin-top:-25px;font-size:90%;">
 &nbsp; &nbsp; Coursera Capstone Project - A Word Prdiction Application Using Shiny<br>
 &nbsp; &nbsp; Created by <b>Karl Eiholzer</b>. &nbsp; &nbsp; See my <a href="https://www.linkedin.com/in/karleiholzer">LinkedIn Profile.</a></div>
 
